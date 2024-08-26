@@ -1,13 +1,16 @@
 {
-  "private": true,
+  "private": false,
   "name": "@plugnotes/react-pdf",
-  "version": "3.1.12",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Diego Muracciole <diegomuracciole@gmail.com> / Plugnotes (Edit)",
   "homepage": "https://github.com/PLUGNOTES/react-pdf#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PLUGNOTES/react-pdf.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "workspaces": [
     "packages/*"
