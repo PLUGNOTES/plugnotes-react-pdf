@@ -1,10 +1,10 @@
 import bestFit from './bestFit';
 import linebreak from './linebreak';
 import slice from '../../attributedString/slice';
-import insertGlyph from '../../attributedString/insertGlyph';
+// import insertGlyph from '../../attributedString/insertGlyph';
 import advanceWidthBetween from '../../attributedString/advanceWidthBetween';
 
-const HYPHEN = 0x002d;
+// const HYPHEN = 0x002d;
 const TOLERANCE_STEPS = 5;
 const TOLERANCE_LIMIT = 50;
 
@@ -38,7 +38,7 @@ const breakLines = (string, nodes, breaks) => {
       end = prevNode.value.end;
 
       line = slice(start, end, string);
-      line = insertGlyph(line.length, HYPHEN, line);
+      // line = insertGlyph(line.length, HYPHEN, line);
     } else {
       end = node.value.end;
       line = slice(start, end, string);

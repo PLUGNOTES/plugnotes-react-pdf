@@ -1,11 +1,14 @@
 {
   "private": true,
-  "name": "@react-pdf/root",
-  "version": "2.0.0",
+  "name": "@plugnotes/react-pdf",
+  "version": "3.1.12",
   "license": "MIT",
-  "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
-  "repository": "git@github.com:diegomura/react-pdf.git",
+  "author": "Diego Muracciole <diegomuracciole@gmail.com> / Plugnotes (Edit)",
+  "homepage": "https://github.com/PLUGNOTES/react-pdf#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PLUGNOTES/react-pdf.git"
+  },
   "workspaces": [
     "packages/*"
   ],
@@ -17,7 +20,7 @@
     "prepublish": "lerna run build",
     "lint": "eslint packages",
     "test": "jest",
-    "examples": "lerna run start --scope @react-pdf/examples",
+    "examples": "lerna run start --scope @plugnotes-react-pdf/examples",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "changeset publish"
